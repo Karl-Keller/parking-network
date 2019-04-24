@@ -63,4 +63,10 @@ Use Cases:
         --Vehicles have GPS locations available to phone app
         --Smart Contract wallets with $ transfers
         --Wallets for charging parking fees, e.g. stellar, phone wallets
+        --Access control
+            --Contract to park (any)
+            --Browse parking data(parking authority, parking enforcement)
+            --Browse contract details(parking authority, city treasurer)
+            --Modify contract details(city treasurer)
+            --Remit funds(city treasurer)
         
