@@ -1,5 +1,9 @@
 # parking-network
-A hyperledger fabric network for minimal hardware parking transactions.
+A hyperledger fabric network for Extremely Constrained Device Infrastructure (XCDI) parking transactions.  A primary purpose for the approach is to avoid as much device rigging at the parking space level as possible as well as to avoid vehicle mounted transponder units.  The intent is to rely on software and data to the maximum extent possible only using GPS locations and Geofencing. GPS locations for the vehicle would come from the GPS navigation system or GPS tracker.  Geofencing would be performed on the parking spaces.  To bootstrap a parking area, e.g. a city, the intent is to automate the initial construction of all parking spaces via machine learning within a GIS.  This would include both outdoor parking and parking garages using BIM data. 
+
+The 'parking network' refers to the 'block chain' - a combination of peer computers and chaincode - that performs the business transactional logic between the various participants.  In addition to the network, there is assumed to be a mobile/web application that consists of a front-end UI with access to several scalable, containerized, back-end servers that: 1) interact with a GIS system for route finding, 2) Perform geofencing in real-time, 3) interact with the blockchain for business policy/transaction services.
+
+The 
 
 The purpose of the network is to perform parking transactions between parking spaces, people, and their vehicles.
 
@@ -69,7 +73,7 @@ Use Cases:
     Various other requirements
         --Vehicles have GPS locations available to phone app
         --Smart Contract wallets with $ transfers
-        --Wallets for charging parking fees, e.g. stellar, phone wallets
+        --People wallets for charging parking fees, e.g. stellar, phone wallets
         --Access control
             --CRUD parking space (parking authority)
             --Set parking space fee (parking authority)
